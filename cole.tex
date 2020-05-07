@@ -1,0 +1,170 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://github.com/colebennett}{\Large Cole Bennett}} & Email:            \href{mailto:cole7405bennett@gmail.com}{cole7405bennett@gmail.com}\\
+  \href{http://github.com/colebennett}{http://github.com/colebennett} & Mobile : +509-844-4641\\
+  {}\hfill\href{http://linkedin.com/in/coleabennett}{http://linkedin.com/in/coleabennettt}\\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Washington State University}{Pullman, WA}
+      {Bachelor of Science in Software Engineering, Minor in Mathematics; GPA: \textbf{3.90 / 4.00}}{Aug. 2016 -- May 2020}
+ 
+  \newline
+  \newline
+  \textbf{Relevant Coursework}{: Advanced Data Structures, C/C++, Algorithm Design & Analysis}
+  \resumeSubHeadingListEnd
+ 
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+  {
+    \textbf{Languages}{: \textbf{Java}, \textbf{Python}, \textbf{Go}, JavaScript, C}
+    \newline
+    \textbf{Technologies}{: Azure, React.js, Docker, Kubernetes, Linux, Git}
+    \hfill
+    \textbf{Databases}{: MySQL, PostgreSQL, MongoDB}
+  }
+ \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Schweitzer Engineering Laboratories}{Lynwood, WA}
+      {Associate Software Engineer}{Feb. 2020 -- Present}
+      \resumeItemListStart
+        \item
+          {Developing containerized microservices for a next-generation Infrastructure as a Service product}
+      \resumeItemListEnd
+% --------Multiple Positions Heading------------
+    % \resumeSubSubheading
+    % {Software Engineer Intern}{Oct 2014 - Sep 2016}
+    % \resumeItemListStart
+    %     \resumeItem{Apache Beam}
+    %      {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+    % \resumeItemListEnd
+    % \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Schweitzer Engineering Laboratories}{Pullman, WA}
+      {Software Engineer Intern}{Oct. 2018 -- Jan. 2020}
+      \resumeItemListStart
+        \resumeItem{Event Viewer -- React/Redux}
+          {Created a web application which displays electrical relay event records and provides filtering/searching functionality; Implemented the front-end with React and Redux, and the backend with Go and GraphQL; Improved client-side loading speeds by over 150\% using server-side caching to support infinite scrolling of UI table rows}
+        \resumeItem{Testbench Automation}
+          {Architected and implemented a benchmark framework to measure and provide performance testing results of a proprietary automation platform: measures, records, and displays test results of jobs deployed on physical and virtual machines; Utilized Go for test suites and infrastructure, PostgreSQL for metric storage, and Kubernetes for container deployments; Provides development teams with insightful metrics to detect which versions of the platform introduced performance concerns}
+         \resumeItem{Cloud Native Bundler}
+          {Golang tool to package Docker images into a cloud native application bundle format for storage and transport}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {TheArchon, LTD}{Remote}
+      {Lead Software Engineer}{Jun. 2013 -- Jan. 2018}
+      \resumeItemListStart
+        \resumeItem{Traffic Routing System}
+          {Designed, implemented, and maintained a backend networking system in Java to track and manage real-time information of server, proxy, and player connections for a large-scale Minecraft multiplayer network; Implemented load balancing algorithms for directing traffic, allowing the system to handle upwards of 4,500 concurrent player connections; a substantial improvement to the initial version handling only 500; Utilized both MySQL and MongoDB to store and efficiently manage purchase orders plus over 2 million records of player data}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Thompson's Custom Orthotics \& Prosthetics}{Spokane, WA}
+      {Freelance Software Development}{Mar. 2016 -- Feb. 2017}
+      \resumeItemListStart
+        \resumeItem{Patient Management Application}
+          {Created a web application for viewing and editing medical forms, tracking patient records, and managing company documents; Backend implemented with Django/Python, and HTML, CSS, and JavaScript for the front-end; Integrated with CI pipeline for continuous deployment to AWS (ECR, ECS) as a containerized application}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Azure Resource Ratings}
+      {Rates the sensitivity of Azure cloud resources according to their degree of containing personally identifiable information; Led the system design, incorporating a microservices architecture with RESTful APIs for each system component including distributed data processing with Spark, NLP machine learning models, and Azure resource management}
+    \resumeSubItem{B.A.T.S. -- Business Analytics Tracking System}
+      {A service allowing businesses to track and analyze client-side interactions on their web applications such as clicks and views; RESTful API documented with OpenAPI and built with Node.js/Express, achieving 95\%+ unit testing coverage using Mocha/Chai}
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
